@@ -1,2 +1,0 @@
-# corkboard
-Created with CodeSandbox

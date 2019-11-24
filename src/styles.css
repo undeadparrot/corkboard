@@ -1,0 +1,74 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  background-color: hsl(240, 18%, 91%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+button,
+p,
+i,
+text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: hsl(258, 15%, 20%);
+  fill: hsl(258, 15%, 20%);
+}
+.buttonbar {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.statebuttons {
+  display: inline-block;
+  margin: 5pt;
+}
+.inset {
+  background: radial-gradient(
+    circle at bottom,
+    hsl(240, 11%, 85%),
+    hsl(240, 15%, 93%)
+  );
+  box-shadow: inset -3px -3px 3px hsl(240, 11%, 91%),
+    -2px -2px 3px hsl(240, 11%, 70%), 1px 1px 2px white,
+    inset 3px 4px 9px hsl(240, 11%, 70%), inset 0px 0px 5px white;
+  transition: box-shadow 0.1s, transform 0.1s;
+  border: none;
+  border-radius: 3pt;
+  margin: 2pt;
+  padding: 5pt;
+  padding-top: 3pt;
+}
+.bubble {
+  background: radial-gradient(
+    circle at bottom,
+    hsl(240, 11%, 85%),
+    hsl(240, 15%, 93%)
+  );
+  box-shadow: 2px 2px 4px hsl(240, 11%, 70%),
+    inset -2px -2px 5px hsl(240, 11%, 70%), inset 3px 4px 9px white,
+    inset 1px 1px 5px hsl(240, 11%, 70%);
+  transition: box-shadow 0.15s ease-in, transform 0.15s;
+  border: none;
+  border-radius: 3pt;
+  margin: 2pt;
+  padding: 5pt;
+  padding-top: 3pt;
+}
+button.bubble:hover {
+  box-shadow: 2px 3px 6px hsl(240, 11%, 70%),
+    inset -2px -1px 5px hsl(240, 11%, 70%), inset 3px 5px 9px white,
+    inset 2px 2px 5px hsl(240, 11%, 70%);
+  transform: translateY(-1pt);
+}
+input[type="range"].inset {
+  height: 1em;
+  vertical-align: text-top;
+}
+.pin {
+}
